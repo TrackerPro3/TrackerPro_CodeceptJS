@@ -1,0 +1,19 @@
+{
+  "name": "trackerpro_codeceptjs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "codeceptjs": "^3.3.0",
+    "puppeteer": "^13.6.0"
+  },
+  "devDependencies": {
+    "mochawesome": "^7.1.3"
+  }
+}
