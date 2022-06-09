@@ -14,7 +14,7 @@ exports.config = {
   output: './output',
   helpers: {
     Puppeteer: {
-     url: 'https://azrtpqaw22.trackerpro.cc/Hotel/Authentication/Login.aspx',
+     url: 'https://azrtpqaw22.trackerpro.cc/Hotel/Authentication/',
       show: true,
       keepCookies: true,
       waitForNavigation: "domcontentloaded",
