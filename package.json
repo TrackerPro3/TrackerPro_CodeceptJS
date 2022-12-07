@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "npx codeceptjs run --verbose --reporter mochawesome"
+    "test": "npx codeceptjs run --verbose --reporter mochawesome",
+    "test1": "node app.js"
   },
   "keywords": [],
   "author": "",
