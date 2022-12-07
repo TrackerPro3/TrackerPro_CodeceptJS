@@ -1,0 +1,183 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2022-12-06T17:57:31.366Z",
+    "end": "2022-12-06T17:57:55.502Z",
+    "duration": 24136,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "b6c648d9-a6d9-49a5-8368-060d647a41f4",
+      "title": "",
+      "fullFile": "C:\\TrackerPro_CodeceptJS\\tests\\user_login_test.js",
+      "file": "\\tests\\user_login_test.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "01b84ea7-c445-4d7f-93e6-99981b0143df",
+          "title": "User login",
+          "fullFile": "C:\\TrackerPro_CodeceptJS\\tests\\user_login_test.js",
+          "file": "\\tests\\user_login_test.js",
+          "beforeHooks": [
+            {
+              "title": "\"before all\" hook: codeceptjs.beforeSuite in \"User login\"",
+              "fullTitle": "User login \"before all\" hook: codeceptjs.beforeSuite in \"User login\"",
+              "timedOut": false,
+              "duration": 1,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "scenario.suiteSetup(suite)",
+              "err": {},
+              "uuid": "8daa519c-105c-42c0-acb9-34168dfd3ae6",
+              "parentUUID": "01b84ea7-c445-4d7f-93e6-99981b0143df",
+              "isHook": true,
+              "skipped": false
+            },
+            {
+              "title": "\"before each\" hook: codeceptjs.before in \"User login\"",
+              "fullTitle": "User login \"before each\" hook: codeceptjs.before in \"User login\"",
+              "timedOut": false,
+              "duration": 3517,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "scenario.setup(suite)",
+              "err": {},
+              "uuid": "b4d262aa-ba5f-4cac-8e44-d2bfdae99af4",
+              "parentUUID": "01b84ea7-c445-4d7f-93e6-99981b0143df",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "afterHooks": [
+            {
+              "title": "\"after all\" hook: codeceptjs.afterSuite in \"User login\"",
+              "fullTitle": "User login \"after all\" hook: codeceptjs.afterSuite in \"User login\"",
+              "timedOut": false,
+              "duration": 0,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "scenario.suiteTeardown(suite)",
+              "err": {},
+              "uuid": "2f6d5a71-bc5d-4de0-ae4c-526ae3f9f0be",
+              "parentUUID": "01b84ea7-c445-4d7f-93e6-99981b0143df",
+              "isHook": true,
+              "skipped": false
+            },
+            {
+              "title": "\"after each\" hook: finalize codeceptjs in \"User login\"",
+              "fullTitle": "User login \"after each\" hook: finalize codeceptjs in \"User login\"",
+              "timedOut": false,
+              "duration": 318,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "scenario.teardown(suite)",
+              "err": {},
+              "uuid": "6f6fe694-9acc-4acd-b69f-d4005f5b7bd7",
+              "parentUUID": "01b84ea7-c445-4d7f-93e6-99981b0143df",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "tests": [
+            {
+              "title": "Verify login with correct credentials",
+              "fullTitle": "User login: Verify login with correct credentials",
+              "timedOut": false,
+              "duration": 20293,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "I, user_loginPage, loginData }) => {\n    \n    I.amOnPage('Login.aspx');\n    //I.refreshPage();\n    user_loginPage.enterUserName(loginData.login.userID);\n    user_loginPage.clickNext();\n    user_loginPage.enterPassword(loginData.login.Password);\n    user_loginPage.clickLogin();\n    user_loginPage.selectOrg();\n    user_loginPage.homepageAssert();",
+              "err": {
+                "message": "Error: element (//div[contains(text(),'QA - Srikanth')]) still not present on page after 10 sec\nwaiting for XPath `//div[contains(text(),'QA - Srikanth')]` failed: timeout 10000ms exceeded",
+                "estack": "Error: element (//div[contains(text(),'QA - Srikanth')]) still not present on page after 10 sec\nwaiting for XPath `//div[contains(text(),'QA - Srikanth')]` failed: timeout 10000ms exceeded\n    at C:\\TrackerPro_CodeceptJS\\node_modules\\codeceptjs\\lib\\helper\\Puppeteer.js:1976:13",
+                "diff": null
+              },
+              "uuid": "5289835a-f10a-4648-b28e-5f9c757f2e09",
+              "parentUUID": "01b84ea7-c445-4d7f-93e6-99981b0143df",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "5289835a-f10a-4648-b28e-5f9c757f2e09"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 20293,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 0
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 0
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "8.1.3"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "[datetime]-report",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false,
+        "reportDir": "output",
+        "reportFilename": "[datetime]-report",
+        "timestamp": "longDate"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

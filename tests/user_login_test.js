@@ -4,7 +4,7 @@ Feature('User login');
 Scenario('Verify login with correct credentials',  ({ I, user_loginPage, loginData }) => {
     
     I.amOnPage('Login.aspx');
-    //I.refreshPage();
+    //I.refreshPage(); test
 
     user_loginPage.enterUserName(loginData.login.userID);
     user_loginPage.clickNext();

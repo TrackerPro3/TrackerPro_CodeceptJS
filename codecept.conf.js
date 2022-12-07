@@ -35,7 +35,8 @@ exports.config = {
       //mochaFile:"output/result.xml",
       overwrite: false, //Creates report with different name and doesn't overwrite existing
       reportDir: "output",
-      reportFilename: '[status]_[datetime]-report',
+      //reportFilename: '[status]_[datetime]-report',
+      reportFilename: '[datetime]-report',
       timestamp: "longDate"
       //timestamp: "true" //This gives the format along with time which helps in identifying the time or diferentiating from other report
     }
