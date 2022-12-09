@@ -1,5 +1,5 @@
 {
-  "name": "trackerpro_codeceptjs",
+  "name": "@bs/trackerpro_codeceptjs",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -8,7 +8,7 @@
     "test1": "node app.js"
   },
   "keywords": [],
-  "author": "",
+  "author": "Srikanth",
   "license": "ISC",
   "dependencies": {
     "codeceptjs": "^3.3.0",
