@@ -54,8 +54,8 @@ var transporter = nodemailer.createTransport({
 
 var mailOptions = {
   from: 'TrackerPROQA@gmail.com',
-  //to: 'sridhar.pogula@ryan.com, chandana.ramavarapu@ryan.com, srikanthyadav.kompally@ryan.com',
-  to: 'srikanthyadav.kompally@ryan.com',
+  to: 'sridhar.pogula@ryan.com, niharika.gunti@ryan.com, srikanthyadav.kompally@ryan.com',
+  //to: 'srikanthyadav.kompally@ryan.com',
   subject: 'Automation Results of TrackerPro on ' + formattedDate1,
   //text: 'That was easy!'
   html: "<p>Hi Team,<br>Please find the automation test results.<br>" + {path:__dirname + '/output/' + formattedDate5 + '-report.html'} +"<br><b>Regards<br>TrackerPro QA Team.</b></p>",
